@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang=" " dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilos.css">
+        <script  src="js/main.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <title> Trivia Reload</title>
+  </head>
+  <body>
+  <header>
+    <h1>Trivia Reload</h1>
+    <h2 id ="nombre">Bienvenid@:</h2>
+  </header>
+
+  <!-- Solicitar Nombre -->
+<form id= "solicitarName">
+Nombre: <input type="text" id="name" class="redondeado" placeholder="Ingresa tu nombre"name="" value=""> <input type="button" class="button" value="Aceptar" onclick="obtener()">
+</form>
+<section>
+  <!-- Preguntar si quieres Jugar -->
+  <p id="validar"></p>
+  <form id="validation">
+  <p>¿Listo para Jugar?</p> <input type="text" id="respons" class="redondeado" placeholder="Ingresa solo SI o NO" name="" value=""> <input type="button" class="button" value="Aceptar" onclick="validar()">
+  </form>
+    <!-- Pregunta 1-->
+  <form id="pregunta1">
+    <p>¿Cuál es el animal que puede durar hasta 10 días sin beber una gota de agua?</p>
+    <ul>
+      <li>1.- Caballo</li>
+      <li>2.- Camello</li>
+      <li>3.- Gato </li>
+    </ul>
+    Tu Respuesta es: <input id="question1" class="redondeado" placeholder="Ingresa tu respuesta" type="number" min = "1" max="3" required= "required" autofocus= "autofocus"><input type="button" class="button" value="Responder" onclick="questionOne()">
+  </form>
+  <!-- Pregunta 2-->
+  <form id="pregunta2">
+    <p>¿Cuál es la capital de China?</p>
+    <ul>
+      <li>1.- Pekin</li>
+      <li>2.- Hong Kong</li>
+      <li>3.- Shangai </li>
+    </ul>
+    Tu Respuesta es: <input id="question2" class="redondeado" placeholder="Ingresa tu respuesta" type="number" min = "1" max="3" required= "required" autofocus= "autofocus"><input type="button" class="button" value="Responder" onclick="questionTwo()">
+  </form>
+  <!-- Pregunta 3-->
+<form id="pregunta3">
+  <p>¿Cuál de los siguientes monumentos es más antiguo?</p>
+  <ul>
+    <li>1.- Coliseo Romano</li>
+    <li>2.- Gran piramide de Guiza</li>
+    <li>3.- Torre Eiffel </li>
+  </ul>
+  Tu Respuesta es: <input id="question3" class="redondeado" placeholder="Ingresa tu respuesta" type="number" min = "1" max="3" required= "required" autofocus= "autofocus"><input type="button" class="button" value="Obtener Resultado" onclick="questionThree()">
+</form>
+
+</section>
+
+<section id="correct" class="result">
+  <p id="oneC"></p>
+  <p id="twoC"></p>
+  <p id="threeC"></p>
+  <p id="puntajeC" class="puntaje"></p>
+</section>
+
+<section id="incorrect" class="result">
+  <p id="oneI"></p>
+  <p id="twoI"></p>
+  <p id="threeI"></p>
+  <p id="puntajeI" class="puntaje"></p>
+</section>
+  </body>
+
+</html>
